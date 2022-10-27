@@ -3,24 +3,35 @@
  *************************************************/
 :root {
   --logo-clr: rgb(0, 22, 50);
+  --sidebar-clr: rgb(5, 30, 52);
   --search-bg-clr: rgb(229, 229, 229);
+  --bg-grey-clr: rgb(248, 249, 250);
+  --bg-accent-clr: rgb(27, 114, 232);
 }
 
-/* debug */
 body {
-  background-color: bisque;
+  overflow: hidden;
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
 
 
 /*************************************************
     HEADER STYLES
  *************************************************/
-.ms_search-bg {
-  background-color: var(--search-bg-clr);
-}
-
 #ms_tablet-logo {
   display: none;
+}
+
+.ms_search-bg {
+  background-color: var(--search-bg-clr);
 }
 
 .ms_search {
@@ -43,13 +54,47 @@ body {
   left: auto !important;
 }
 
+/*************************************************
+    SIDEBAR STYLES
+ *************************************************/
+#ms_sidebar-container {
+  min-height: 90vh;
+  max-height: 90vh;
+}
 
+#ms_sidebar-container .ms_menu {
+  width: 10rem;
+}
 
+.ms_sidebar-clr {
+  background-color: var(--sidebar-clr);
+}
 
+/*************************************************
+    PAGE CONTENT STYLES
+ *************************************************/
+.ms_bg-grey {
+  background-color: var(--bg-grey-clr) !important;
+}
 
+.ms_bg-accent {
+  background-color: var(--bg-accent-clr) !important;
+}
 
+#ms_content {
+  overflow-y: auto;
+  height: 100vh;
+  padding-bottom: 5rem;
+}
 
+.ms_bg-pill {
+  background-color: rgba(0, 0, 0, .3);
+  font-size: .8rem;
+}
 
+.ms_bg-pill:hover {
+  background-color: rgba(0, 0, 0, .4);
+}
 
 /*************************************************
     RESPONSIVE
@@ -68,7 +113,15 @@ body {
     display: none;
   }
 
-  li:nth-child(-n+3) {
+  .nav-item:nth-child(-n+3) {
+    display: none;
+  }
+
+  #ms_sidebar-container .ms_menu {
+    width: 4rem;
+  }
+
+  .ms_menu-voice {
     display: none;
   }
 
