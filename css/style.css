@@ -2,9 +2,74 @@
     GENERAL STYLES
  *************************************************/
 :root {
-  --bar-clr: rgb(44, 62, 80);
-  --title-w-clr: #ffff;
-  --title-b-clr: #000;
-  --footer-clr: rgb(58, 84, 109);
-  --accent-clr: rgb(26, 188, 156);
+  --logo-clr: rgb(0, 22, 50);
+  --search-bg-clr: rgb(229, 229, 229);
+}
+
+/* debug */
+body {
+  background-color: bisque;
+}
+
+
+/*************************************************
+    HEADER STYLES
+ *************************************************/
+.ms_search-bg {
+  background-color: var(--search-bg-clr);
+}
+
+#ms_tablet-logo {
+  display: none;
+}
+
+.ms_search {
+  position: relative;
+}
+
+.ms_search .fa-magnifying-glass {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  font-size: clamp(.45rem, 23px, 2rem);
+}
+
+.ms_search input {
+  text-indent: 30px;
+}
+
+.dropdown-menu-right {
+  right: 0 !important;
+  left: auto !important;
+}
+
+
+
+
+
+
+
+
+
+/*************************************************
+    RESPONSIVE
+ *************************************************/
+@media all and (max-width: 991px) {
+
+  #ms_tablet-logo {
+    display: block;
+  }
+
+  #ms_tablet-logo img {
+    width: min(35px, 35px)
+  }
+
+  #ms_logo {
+    display: none;
+  }
+
+  li:nth-child(-n+3) {
+    display: none;
+  }
+
 }
