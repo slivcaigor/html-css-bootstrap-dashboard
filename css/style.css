@@ -72,7 +72,7 @@ li {
 }
 
 .ms_sidebar-clr {
-  background-color: var(--sidebar-clr);
+  background: linear-gradient(50deg, #12293F 70%, #051E34 60%);
 }
 
 .ms_menu li:hover {
