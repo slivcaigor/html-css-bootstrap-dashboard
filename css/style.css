@@ -7,7 +7,7 @@
   --search-bg-clr: rgb(229, 229, 229);
   --bg-grey-clr: rgb(248, 249, 250);
   --bg-accent-clr: rgb(27, 114, 232);
-  --bg-hover: rgba(0, 0, 0, .4)
+  --bg-hover: rgba(255, 255, 255, .6)
 }
 
 body {
@@ -83,8 +83,6 @@ li {
   background-color: var(--bg-hover);
 }
 
-
-
 /*************************************************
     PAGE CONTENT STYLES
  *************************************************/
@@ -140,6 +138,11 @@ li {
   margin-top: -12px;
 }
 
+.fa-pen:hover,
+.fa-trash:hover {
+  background-color: grey;
+  color: white;
+}
 
 /*************************************************
     RESPONSIVE
