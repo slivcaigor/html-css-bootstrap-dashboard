@@ -62,8 +62,8 @@ li {
     SIDEBAR STYLES
  *************************************************/
 #ms_sidebar-container {
-  min-height: 90vh;
-  max-height: 90vh;
+  min-height: 91vh;
+  max-height: 91vh;
 }
 
 #ms_sidebar-container .ms_menu {
@@ -111,6 +111,7 @@ li {
   background-color: orangered;
   border-radius: 50%;
 }
+
 
 /*************************************************
     RESPONSIVE
