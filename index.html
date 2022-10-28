@@ -100,7 +100,7 @@
           <section class="ms_bg-accent py-3">
             <div class="container-fluid">
               <div class="row align-items-center">
-                <div class="col-xl-7 col-md-12 my-3">
+                <div class="col-xl-8 col-md-12 my-3">
                   <h1 class="text-light mb-0 d-inline mr-2">Boolean</h1>
                   <span class="rounded-pill ms_bg-pill px-2 py-1">
                     <a class="text-light" href="">Piano blaze</a>
@@ -136,7 +136,8 @@
           <section>
             <div class="container-fluid">
               <div class="row">
-                <div class="col-7 my-3">
+                <div class="col-xl-8 col-md-12 my-3">
+                  <!-- Card Prossime Classi -->
                   <div class="card">
                     <div class="card-header d-flex justify-content-between">
                       <h3>Prossime Classi</h3>
@@ -331,51 +332,118 @@
                       </table>
                     </div>
                   </div>
-                </div>
-                <div class="col-3 my-3">
-                  <div class=" card">
-                    <h3 class="card-header">Todo</h3>
+                  <!-- Card FAQ -->
+                  <div class="card mt-4">
+                    <h3 class="card-header">F.A.Q.</h3>
                     <div class="card-body">
-                      <table class="table border">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
-                                <label class="form-check-label" for="flexCheck1">
-                                  <p class="card-text">Kickoff nuove classi</p>
-                                </label>
+                      <div class="ms_a-style">
+                        <a data-bs-toggle="collapse" href="#multiCollapse1" role="button" aria-expanded="false"
+                          aria-controls="multiCollapse1">Come aggiungere una nuova classe?</a>
+                        <div class="row my-2">
+                          <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapse1">
+                              <div class="card card-body">
+                                Clicca sul + in alto a destra della tabella *Prossime Classi*
                               </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
-                                <label class="form-check-label" for="flexCheck2">
-                                  <p class="card-text">Lezione su Bootstrap 5 in classe #75</p>
-                                </label>
+                            </div>
+                          </div>
+                        </div>
+                        <a data-bs-toggle="collapse" href="#multiCollapse2" role="button" aria-expanded="false"
+                          aria-controls="multiCollapse2">Come posso accedere alle informazioni del mio account?</a>
+                        <div class="row my-2">
+                          <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapse2">
+                              <div class="card card-body">
+                                Clicca sull'icona della campanella.
                               </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheck3">
-                                <label class="form-check-label" for="flexCheck3">
-                                  <p class="card-text">Controllare username github studenti</p>
-                                </label>
+                            </div>
+                          </div>
+                        </div>
+                        <a data-bs-toggle="collapse" href="#multiCollapse3" role="button" aria-expanded="false"
+                          aria-controls="multiCollapse3">Posso usare questa dashboard da mobile?</a>
+                        <div class="row my-2">
+                          <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapse3">
+                              <div class="card card-body">
+                                Si e poi? Vuoi anche l'apple watch?
                               </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="col-xl-4 col-md-12 my-3">
+                  <!-- Card ToDo -->
+                  <div class=" card">
+                    <h3 class="card-header">Todo</h3>
+                    <div class="card-body">
+                      <div class="rounded border">
+                        <table class="table table-borderless mb-0">
+                          <tbody>
+                            <tr class="border-bottom">
+                              <td>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+                                  <label class="form-check-label" for="flexCheck1">
+                                    <p class="card-text">Kickoff nuove classi</p>
+                                  </label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="border-bottom">
+                              <td>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+                                  <label class="form-check-label" for="flexCheck2">
+                                    <p class="card-text">Lezione su Bootstrap 5 in classe #75</p>
+                                  </label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheck3">
+                                  <label class="form-check-label" for="flexCheck3">
+                                    <p class="card-text">Controllare username github studenti</p>
+                                  </label>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card Chart -->
+                  <div class="card mt-4">
+                    <div class="card-body">
+                      <div class="border rounded">
+                        <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Utenti attivi</h5>
+                          <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese
+                          </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Gennaio: 1200</li>
+                          <li class="list-group-item">Febbraio: 800</li>
+                          <li class="list-group-item">Marzo: 1500</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Visualizza report approfondito</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </section>
+
         </div>
       </div>
     </div>

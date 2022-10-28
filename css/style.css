@@ -112,6 +112,25 @@ li {
   border-radius: 50%;
 }
 
+.ms_a-style a {
+  color: var(--sidebar-clr);
+}
+
+.ms_a-style a {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.ms_a-style a:after {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-size: 2rem;
+  content: "\f107";
+  color: #1f7de2;
+  float: right;
+  margin-top: -12px;
+}
+
 
 /*************************************************
     RESPONSIVE
