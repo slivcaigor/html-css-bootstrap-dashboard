@@ -7,6 +7,7 @@
   --search-bg-clr: rgb(229, 229, 229);
   --bg-grey-clr: rgb(248, 249, 250);
   --bg-accent-clr: rgb(27, 114, 232);
+  --bg-hover: rgba(0, 0, 0, .4)
 }
 
 body {
@@ -72,6 +73,14 @@ li {
 
 .ms_sidebar-clr {
   background-color: var(--sidebar-clr);
+}
+
+.ms_menu li:hover {
+  background-color: var(--bg-hover);
+}
+
+.ms_admin:hover {
+  background-color: var(--bg-hover);
 }
 
 
