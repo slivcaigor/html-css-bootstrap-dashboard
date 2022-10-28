@@ -54,6 +54,10 @@ li {
   left: auto !important;
 }
 
+.navbar-nav .dropdown-menu {
+  position: absolute !important;
+}
+
 /*************************************************
     SIDEBAR STYLES
  *************************************************/
@@ -69,6 +73,8 @@ li {
 .ms_sidebar-clr {
   background-color: var(--sidebar-clr);
 }
+
+
 
 /*************************************************
     PAGE CONTENT STYLES
@@ -87,6 +93,10 @@ li {
   padding-bottom: 5rem;
 }
 
+.ms_more {
+  display: none;
+}
+
 .ms_bg-pill {
   background-color: rgba(0, 0, 0, .3);
   font-size: .8rem;
@@ -94,6 +104,12 @@ li {
 
 .ms_bg-pill:hover {
   background-color: rgba(0, 0, 0, .4);
+}
+
+.ms_bg-avatar {
+  padding: 13px;
+  background-color: orangered;
+  border-radius: 50%;
 }
 
 /*************************************************
@@ -122,6 +138,14 @@ li {
   }
 
   .ms_menu-voice {
+    display: none;
+  }
+
+  .ms_more {
+    display: block;
+  }
+
+  .ms_bool-platform {
     display: none;
   }
 
